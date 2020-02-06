@@ -10,6 +10,7 @@
 <body>
     @include('inc.navbar')
     <div class="container">
+        @include('inc.message')
         @yield('content')
     </div>
     <footer id="footer" class="text-center">
