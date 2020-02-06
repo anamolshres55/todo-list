@@ -4,9 +4,11 @@
 
     <a href="/" class="btn btn-default"> Go Back</a>
 
-    <h2><a href="todo/{{$todo->id}}">{{$todo->text}}</a></h2>
+    <h2><a href="/todo/{{$todo->id}}">{{$todo->text}}</a></h2>
     <div class="label label-danger">{{$todo->due}}</div>
     <hr>
     <p>{{$todo->body}}</p>
+    <br><br>
+    <a href="/todo/{{$todo->id}}/edit" class="btn btn-default"> Edit</a>
 
 @endsection

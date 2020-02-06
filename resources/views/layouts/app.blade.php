@@ -14,7 +14,7 @@
         @yield('content')
     </div>
     <footer id="footer" class="text-center">
-        <p> Copyright &copy; 2017 Anmol's Todo List </p>
+        <p> Copyright &copy; 2020 Anamol </p>
     </footer>
 </body>
 </html>
