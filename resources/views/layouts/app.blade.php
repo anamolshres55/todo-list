@@ -8,11 +8,12 @@
     <title>Todo List</title>
 </head>
 <body>
+    @include('inc.navbar')
     <div class="container">
         @yield('content')
     </div>
     <footer id="footer" class="text-center">
-        <p> Copyright &copy; 2017 Anmol's TodoList </p>
+        <p> Copyright &copy; 2017 Anmol's Todo List </p>
     </footer>
 </body>
 </html>
