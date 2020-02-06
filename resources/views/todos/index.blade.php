@@ -1,13 +1,19 @@
-<h1>Todos</h1>
+@extends('layouts.app')
 
-@if(count($todoss) > 0 )
+@section('content')
 
-@foreach($todoss as $todo)
-<div class="well">
-    <h3>{{$todo->text}}</h3>
-        <span class="label label-danger">{{$todo->due}}</span>
-</div>
+    <h1>Todos</h1>
 
-@endforeach
+    @if(count($todoss) > 0 )
 
-@endif
+    @foreach($todoss as $todo)
+    <div class="well">
+        <h4>{{$todo->text}} <span class="label label-danger">{{$todo->due}}</span></h4>
+            
+    </div>
+
+    @endforeach
+
+    @endif
+
+@endsection
